@@ -2,9 +2,9 @@
 
 ### Setting Up Your Environment
 
-    Visit https://reactnative.dev/docs/environment-setup and make sure you've selected 
-    "React native CLI Quickstart" to set up your environment. Follow the steps of this 
-    page to ensure your environment is working correctly before cloning this repo.
+    You can edit and run the file in visual studio, however I reccomend Pycharm community,
+    it allows you to use the pyhton console as well so you can replicate the api requests.
+    it can be found here: https://www.jetbrains.com/pycharm/download/#section=windows 
 
 ### Cloning Your Repo
 
@@ -15,10 +15,35 @@
 
 ### Open and Run Code
 
-    Open android studio which you installed when setting up your environment and
-    open your workbc-mobile-app project. Build your project by clicking the hammer 
-    and run by click the play button in the tool bar (you can also use the command 
-    line as shown when setting up your environment).
+    Open Visual Studio or Pycharm which you installed when setting up your environment and
+    open your workbc-helpbot project. in the terminal your going to need to ensure you're 
+    running atleast python 3.7  you can check using python --version. You will also need pip
+    to execute the following command:
+        
+        pip install flask, keras, tensorflow, nltk, pickle-mixin
+    
+    Once those modules are installed you can run:
+       
+       python train_chatbot.py
+    
+    to create the h6 and pkl files for the chatapp.py scrip.
+    Note: you will see some error messages, they can be ignored they're not neccessary
+    to run the script. 
+    now you can either run:
+       
+       python chatgui.py
+            or
+        python App.py
+     
+    the chatgui.py will open a gui for you to test the AI's responses,
+    the app.py will run the api which you can test either in at http://127.0.0.1:5000/
+    by adding a phrase or word to the end i.e. http://127.0.0.1:5000/thank%20you which will show
+    the response on the webpage. or you can use the python console using the request:
+       
+       requests.get("http://localhost:5000/Thanks").text
+            or
+        r = requests.get("http://localhost:5000/Thanks")
+        r.text
 
 ### Using Git Command-line
 
