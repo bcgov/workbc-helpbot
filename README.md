@@ -26,7 +26,7 @@
        
        python train_chatbot.py
     
-    to create the h6 and pkl files for the chatapp.py scrip.
+    to create the h5 and pkl files for the chatapp.py script.
     Note: you will see some error messages, they can be ignored they're not neccessary
     to run the script. 
     now you can either run:
