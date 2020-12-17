@@ -45,7 +45,8 @@
         r = requests.get("http://localhost:5000/Thanks")
         r.text
 ### Code References
-    ![Alt text](https://github.com/bcgov-elmsd/workbc-helpbot/blob/main/HelpbotCode.png?raw=true "Helpbot")
+    ![Alt text](https://github.com/bcgov-elmsd/workbc-helpbot/blob/main/HelpbotCode.png?raw=true)
+    
 ### Using Git Command-line
 
     When editing the project use your own branch, you can create a new branch by using  the command:
