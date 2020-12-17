@@ -1,0 +1,6 @@
+###### Requirements without Version Specifiers ######
+flask
+keras
+tensorflow
+nltk
+pickle-mixin

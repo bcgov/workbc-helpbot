@@ -20,7 +20,7 @@
     running atleast python 3.7  you can check using python --version. You will also need pip
     to execute the following command:
         
-        pip install flask, keras, tensorflow, nltk, pickle-mixin
+        pip install -r requirements.txt
     
     Once those modules are installed you can run:
        
