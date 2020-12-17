@@ -1,8 +1,9 @@
+# !/usr/bin/python
+import train_chatbot
 # app.py
 from flask import Flask  # import flask
 from chatapp import *
-# !/usr/bin/python
-import train_chatbot
+
 
 app = Flask(__name__)  # create an app instance
 
