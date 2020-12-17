@@ -45,7 +45,7 @@
         r = requests.get("http://localhost:5000/Thanks")
         r.text
 ### Code References
-    ![picture](https://github.com/bcgov-elmsd/workbc-helpbot/blob/main/HelpbotCode.png)
+![image](https://github.com/bcgov-elmsd/workbc-helpbot/blob/main/HelpbotCode.png)
     
 ### Using Git Command-line
 
