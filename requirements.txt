@@ -4,4 +4,4 @@ keras
 tensorflow
 nltk
 pickle-mixin
-h5py
+h5py==2.10.0
