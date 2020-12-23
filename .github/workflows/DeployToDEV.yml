@@ -1,0 +1,35 @@
+name: DEPLOY-TO-DEV
+on:
+  # Trigger the workflow on push to the master branch
+
+  push:
+    branches:
+      - develop
+
+jobs:
+  one:
+    name: Deploy to Openshift
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Get the version
+        id: get_version
+        run: echo ::set-output name=VERSION::$(echo $GITHUB_REF | cut -d / -f 3) # GITHUB_HEAD_REF is only initiated when trigger is pull request.
+      - name: GitHub context
+        run: echo '${{ steps.get_version.outputs.VERSION }}'
+      - name: OpenShift Action
+        uses: redhat-developer/openshift-actions@v1.1
+        env:
+          PROJECT: 551bf1-dev
+          REF: ${{ steps.get_version.outputs.VERSION }}
+        with:
+          version: 'latest'
+          openshift_server_url: ${{ secrets.OPENSHIFT_SERVER_URL }}
+          parameters: '{"apitoken": "${{ secrets.API_TOKEN }}", "acceptUntrustedCerts": "true"}'
+          #parameters: '{"username": "${{ secrets.USERNAME }}", "password": "${{ secrets.PASSWORD }}", "acceptUntrustedCerts": "true"}'
+          cmd: |
+            'version'
+            'project ${PROJECT}'
+            'start-build workbc-helpbot --commit=${REF} --follow'
+            'status'
