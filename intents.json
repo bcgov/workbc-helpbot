@@ -1,6 +1,6 @@
 {"intents": [
   {"tag": "greeting",
-  "patterns":  ["Hi There", "Howdy", "Is anyone there?","Hola","Hello","Bonjour","greetings","aloha"],
+  "patterns":  ["Hi There", "Howdy", "Is anyone there?","Hola","Hello","hey","Bonjour","greetings","aloha"],
   "responses": ["Hello", "Good to see you", "Hi there, how can I help you?"],
   "context": ""},
    {"tag": "goodbye",
@@ -13,7 +13,7 @@
   "context": ""},
   {"tag": "purpose",
   "patterns":  ["what is your purpose?", "what can you do?", "how can you help me?","what do you do?"],
-  "responses": ["I can help you navigate through this app. if you want to know how to find services, i can provide you with the steps"],
+  "responses": ["I can help you navigate through this app. For example if you want to know how to find services, or search for jobs I can provide you with the steps."],
   "context": ""},
    {"tag": "thanks",
   "patterns":  ["Thanks", "Thank you", "That's helpful, thanks","Awesome thanks","Thanks for helping me","Thanks a lot", "Merci"],
