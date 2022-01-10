@@ -1,0 +1,74 @@
+apiVersion: template.openshift.io/v1
+kind: Template
+metadata:
+  creationTimestamp: null
+  name: workbc-helpbot-bc
+labels:
+  template: workbc-helpbot
+objects:
+- apiVersion: v1
+  kind: ImageStream
+  metadata:
+    creationTimestamp: null
+    labels:
+      shared: true
+    name: ${NAME}
+  spec:
+    lookupPolicy:
+      local: false
+- kind: BuildConfig
+  apiVersion: build.openshift.io/v1
+  metadata:
+    annotations:
+      app.openshift.io/vcs-ref: main
+      app.openshift.io/vcs-uri: 'https://github.com/bcgov-elmsd/workbc-helpbot'
+    name: ${NAME}
+    labels:
+      app: ${NAME}
+      app.kubernetes.io/component: ${NAME}
+      app.kubernetes.io/instance: ${NAME}
+      app.kubernetes.io/name: python
+      app.kubernetes.io/part-of: workbc-api
+      app.openshift.io/runtime: python
+      app.openshift.io/runtime-version: '3.8'
+  spec:
+    nodeSelector: null
+    output:
+      to:
+        kind: ImageStreamTag
+        name: ${NAME}:${TAG}
+    resources:
+      limits:
+        cpu: '2'
+        memory: 4Gi
+      requests:
+        cpu: '1'
+        memory: 2Gi
+    successfulBuildsHistoryLimit: 5
+    failedBuildsHistoryLimit: 5
+    strategy:
+      type: Source
+      sourceStrategy:
+        from:
+          kind: ImageStreamTag
+          namespace: openshift
+          name: 'python:3.6'
+    postCommit: {}
+    source:
+      type: Git
+      git:
+        uri: 'git@github.com:bcgov-elmsd/workbc-helpbot'
+      contextDir: /
+      sourceSecret:
+        name: workbc-helpbot
+parameters:
+- description: A name used for all objects
+  displayName: Name
+  name: NAME
+  required: true
+  value: workbc-helpbot
+- description: Tag used for the image tags
+  displayName: tag
+  name: TAG
+  required: true
+  value: latest

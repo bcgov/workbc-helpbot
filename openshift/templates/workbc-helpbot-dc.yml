@@ -1,0 +1,64 @@
+kind: DeploymentConfig
+apiVersion: apps.openshift.io/v1
+metadata:
+  annotations:
+    app.openshift.io/vcs-ref: main
+    app.openshift.io/vcs-uri: 'https://github.com/bcgov-elmsd/workbc-helpbot'
+    openshift.io/generated-by: OpenShiftWebConsole
+  name: workbc-helpbot
+  labels:
+    app: workbc-helpbot
+    app.kubernetes.io/component: workbc-helpbot
+    app.kubernetes.io/instance: workbc-helpbot
+    app.kubernetes.io/name: python
+    app.kubernetes.io/part-of: workbc-api
+    app.openshift.io/runtime: python
+    app.openshift.io/runtime-version: '3.6'
+spec:
+  strategy:
+    type: Rolling
+    rollingParams:
+      updatePeriodSeconds: 1
+      intervalSeconds: 1
+      timeoutSeconds: 600
+      maxUnavailable: 25%
+      maxSurge: 25%
+    resources: {}
+    activeDeadlineSeconds: 21600
+  triggers:
+    - type: ImageChange
+      imageChangeParams:
+        automatic: true
+        containerNames:
+          - workbc-helpbot
+        from:
+          kind: ImageStreamTag
+          namespace: 551bf1-dev
+          name: 'workbc-helpbot:latest'
+    - type: ConfigChange
+  replicas: 1
+  revisionHistoryLimit: 10
+  test: false
+  selector:
+    app: workbc-helpbot
+    deploymentconfig: workbc-helpbot
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: workbc-helpbot
+        deploymentconfig: workbc-helpbot
+    spec:
+      containers:
+        - name: workbc-helpbot
+          ports:
+            - containerPort: 5000
+              protocol: TCP
+          resources: {}
+          terminationMessagePath: /dev/termination-log
+          terminationMessagePolicy: File
+          imagePullPolicy: Always
+      restartPolicy: Always
+      terminationGracePeriodSeconds: 30
+
+
