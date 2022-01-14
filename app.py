@@ -4,8 +4,7 @@ import train_chatbot
 # app.py
 from flask import Flask  # import flask
 from chatapp import *
-nltk.download('punkt')
-nltk.download('wordnet')
+
 
 SERVER_NAME = "0.0.0.0"
 
