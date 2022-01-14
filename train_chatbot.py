@@ -8,7 +8,9 @@ from keras.models import Sequential
 from keras.layers import *
 from tensorflow.keras.optimizers import SGD
 import random
-
+nltk.download('word_tokenize')
+nltk.download('punkt')
+nltk.download('wordnet')
 #!/usr/bin/python
 words=[]
 classes = []
