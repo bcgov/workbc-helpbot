@@ -6,7 +6,7 @@ import pickle
 import numpy as np
 from keras.models import Sequential
 from keras.layers import *
-from tensorflow.keras.optimizers import SGD
+from keras.optimizers import SGD
 import random
 
 #!/usr/bin/python
