@@ -1,146 +1,1135 @@
-{"intents": [
-  {"tag": "greeting",
-  "patterns":  ["Hi There", "Howdy", "Is anyone there?","Hola","Hello","hey","hi","Bonjour","greetings","aloha"],
-  "responses": ["Hello", "Good to see you", "Hi there, how can I help you?"],
-  "context": ""},
-   {"tag": "goodbye",
-  "patterns":  ["Bye", "See you later", "Goodbye","Nice chatting with you, Bye","Till next time","Bye,Have a good day!"],
-  "responses": ["See you!", "good Bye","Have a nice day!", "Bye! come back again soon."],
-  "context": ""},
-   {"tag": "help",
-  "patterns":  ["I need some help", "can you help me?", "I am in need of assistance"],
-  "responses": ["Of course, what do you need help with", "how can I be of assistance"],
-  "context": ""},
-  {"tag": "purpose",
-  "patterns":  ["what is your purpose?", "what can you do?", "how can you help me?","what do you do?"],
-  "responses": ["I can help you navigate through this app. For example if you want to know how to find services, or search for jobs I can provide you with the steps."],
-  "context": ""},
-   {"tag": "thanks",
-  "patterns":  ["Thanks", "Thank you", "That's helpful, thanks","Awesome thanks","Thanks for helping me","Thanks a lot", "Merci"],
-  "responses": ["Happy to help", "Anytime", "No problemo", "My pleasure"],
-  "context": ""},
-  {"tag": "workbcServices",
-  "patterns":  ["Where can I find out more about workBC Services?", "What are WorkBC Services", "Do I qualify for WorkBC Services?"],
-  "responses": ["WorkBC Services can be found on the <a href='https://www.workbc.ca/employment-services.aspx'>workbc.ca</a>"],
-  "context": ""},
-  {"tag": "es",
-    "patterns":  ["What does ES stands for?","What is Employment Services?" ],
-    "responses": ["To learn about Employment Services, go to <a href=https://www.workbc.ca/Employment-Services/Assistive-Technology-Services.aspx'> workbc.ca </a>"],
-    "context": ""},
-  {"tag": "ats",
-    "patterns":  ["What does ATS stands for?","What is Assistive Technology Services?","I have a disability, what services do you provide?","I need assistive equipment","I neeed assistive device" ],
-    "responses": ["To learn about Assistive Technology Services, go to <a href=https://www.workbc.ca/Employment-Services/Assistive-Technology-Services.aspx'> workbc.ca </a>"],
-    "context": ""},
-  {"tag": "apprentice",
-    "patterns":  ["I'm an rentice, what help can I get?"," services do you provide?","I need assistive equipment","I need assistive device" ],
-    "responses": ["To learn about Assistive Technology Services, go to <a href=https://www.workbc.ca/Employment-Services/Assistive-Technology-Services.aspx'> workbc.ca </a>"],
-    "context": ""},
-  {"tag": "oes",
-    "patterns":  ["Where can I find out more about OES?", "What does OES stand for?", "Where can I find more information about Online Employment Services?" ],
-    "responses": ["Online Employment Services (OES) can be found on the <a href='https://www.workbc.ca/Employment-Services/Apprentice-Services.aspx'>workbc.ca</a>"],
-    "context": ""},
-  {"tag": "location",
-    "patterns":  ["How do I change my location?","How do I change the area I'm searching for a job for?" ],
-    "responses": ["To change your location for your job search, navigate to 'Job Search' and select 'Change Location' or click<nav Job Search->Change Location> here </nav>"],
-    "context": ""},
-  {"tag": "language",
-    "patterns":  ["How do I change my language?","How do I switch to French?", "How do I switch to English?" ],
-    "responses": ["To change your preferred language for WorkBC Services, click the menu icon in the upper right corner and select 'My Profile'. Or click<nav Profile->Change Location> here </nav>"],
-    "context": ""},
-  {"tag": "jobsearch",
-    "patterns":  ["How do I search for a job?","I need to find a job","Im looking for a job"],
-    "responses": ["To search for a job, navigate to 'Job Search' and enter you your job keywords. Or click<nav Job Search->New Jobs> here </nav>"],
-    "context": ""},
-  {"tag": "newjobs",
-    "patterns":  ["Where are the new jobs?","How do I see the latest job postings?","I need a job" ],
-    "responses": ["To view the latest job postings, navigate to 'Job Search' and click on 'New Jobs' or click<nav Job Search->New Jobs> here </nav>"],
-    "context": ""},
-  {"tag": "savedjobs",
-    "patterns":  ["Where are my saved jobs?","I saved a job posting and I can't find it" ],
-    "responses": ["To view your saved job postings, navigate to 'Job Search' and click on 'Saved Jobs' or click<nav Job Search->Saved Jobs> here </nav>"],
-    "context": ""},
-  {"tag": "recentjobs",
-    "patterns":  ["Where can I find the recently viewed jobs?","I saw a job posting, where can I view it again?" ],
-    "responses": ["To view recently viewed job postings, navigate to 'Job Search' and click on 'Recently Viewed' or click<nav Job Search->Recently Viewed> here </nav>"],
-    "context": ""},
-  {"tag": "recentjobsearch",
-    "patterns":  ["Where can I find my recent job searches?","I searched for a job, where can I see those searches again?" ],
-    "responses": ["To view recent job searches, navigate to 'Job Search' and click on 'Recent Job Searches' or click<nav Job Search->Recent Job Searches> here </nav>"],
-    "context": ""},
-  {"tag": "employmentcounsellor",
-    "patterns":  ["Where can I find my employment counsellor","Who can help me find a job?"],
-    "responses": ["To connect with your employment counsellor, click the 'Messages' tab and send a message to your employment counsellor. Additionally, you can contact your WorkBC centre to be connected directly with your employment counsellor."], 
-    "context": ""},
-  {"tag": "workbcapplication",
-    "patterns":  ["Where can I find my WorkBC application?","Can I resume my WorkBC application?","I need to finish my WorkBC application","How can start a WorkBC application?"],
-    "responses": ["To view your current WorkBC application or create a new application, click the 'Home' tab and select 'WorkBC Applications'. Or click <nav Home->WorkBC Application> here</nav>"], 
-    "context": ""},
-  {"tag": "findworkbc",
-    "patterns":  ["How do I contact WorkBC?","How do I find my local WorkBC centre?","Where is the closest WorkBC centre to me?","I need help contacting WorkBC"],
-    "responses": ["To find your nearest WorkBC centre, click the menu icon in the upper right corner and select 'Find a WorkBC Centre'. Or click<nav Profile->Find a WorkBC Centre> here </nav>"], 
-    "context": ""},
-  {"tag": "discover",
-    "patterns":  ["Where can I find out more about WorkBC Services?","What are the services that WorkBC offers?" ],
-    "responses": ["To find out more about WorkBC services, click the menu icon in the upper right corner and select 'Discover WorkBC Services'. Or click<nav Menu->Discover WorkBC Services> here </nav>"],
-    "context": ""},
-  {"tag": "noaccount",
-    "patterns":  ["It says no BCeID account found","Why can't it find my BCeID account?" ],
-    "responses": ["The information you have entered does not match the information that we have. Please check the information entered, or continue as a guest. Or, if you have forgotten your password, visit the BCeID login page for help. To find out more, click <a href=https://www.bceid.ca/logon.aspx'> here </a>"],
-    "context": ""},
-  {"tag": "forgotpw",
-    "patterns":  ["I forgot my password","I lost my password" ],
-    "responses": ["If you have forgotten your password, visit the BCeID | BC Services Card login page for help. Click <a href='https://www.bceid.ca/logon.aspx'> here </a> for the BCeID login page or click <a href='https://id.gov.bc.ca/account/'> here </a> for the BC Services Card login page."],
-    "context": ""},
-  {"tag": "reginfo",
-    "patterns":  ["What information do I need to register","What do you require to register"],
-    "responses": ["To register for online WorkBC services, an account is required. We will need some of your personal information in order to complete the registration. This information is protected under the Freedon of Information and Protection of Privacy Act (FOIPPA)"],
-    "context": ""},
-  {"tag": "create",
-      "patterns":  ["How do I register", "How do I create an account?"],
-      "responses": ["To register and create a WorkBC application, click the 'Home' tab and select 'WorkBC Applications'. Or click <nav Home->WorkBC Application> here</nav>"],
-      "context": ""},
-  {"tag": "bcservicescard",
-    "patterns":  ["What is a BC Services Card","How can I login with my card" ],
-    "responses": ["The BC Services Card allows users to authenticate via the BC Services Card app installed on your device. Click <a href='https://id.gov.bc.ca/account/'> here </a> for the BC Services Card page."],
-    "context": ""},
-  {"tag": "moreinfo",
-    "patterns":  ["Why do you need more information from me?","What additional information do you need to create an account?" ],
-    "responses": ["Some personal information is required to create a WorkBC Online Services (OES) account which will be used to verify your identity. Social Insurance Number (SIN) and Personal Health Number (PHN) are unique to each individual and allow us to confirm your account details."],
-    "context": ""},
-  {"tag": "home",
-    "patterns":  ["What is the Home screen","What does the Home button do" ],
-    "responses": ["The 'Home' screen is the main area of the app. Here you will find secure messaging, events you have added to your calendar, action plan items that have been sent to you from your Employment Counsellor, job search results and your case details."],
-    "context": ""},
-  {"tag": "messages",
-    "patterns":  ["What is the Messages screen","What does the Messages button do" ],
-    "responses": ["'Messages' allows you to communicate directly and securely with your WorkBC Centre. Messaging outside of WorkBC is not available."],
-    "context": ""},
-  {"tag": "jobboard",
-    "patterns":  ["What is the Job board screen","What does the Job Search button do" ],
-    "responses": ["The 'Job Board' allows you to search, save and appy for jobs. You can view new jobs, save searches, or look at the jobs you've recently viewed and recent searches."],
-    "context": ""},
-  {"tag": "changeinfo",
-    "patterns":  ["How do I change my email address","How do I change my phone number" ],
-    "responses": ["To change your email address or phone number, click the menu icon in the upper right corner and select 'My Profile'. Select the rounded edit icon which will bring you to the page to make the changes. To save the changes that you made, press the 'Update' button. To be taken to this page, click <n nav Menu->My Profile->Edit PH and Email> here </nav>."],
-    "context": ""},
-  {"tag": "validateinfo",
-    "patterns":  ["How do I change my email address","How do I change my phone number" ],
-    "responses": ["To change your email address or phone number, click the menu icon in the upper right corner and select 'My Profile'. Select the rounded edit icon which will bring you to the page to make the changes. To save the changes that you made, press the 'Update' button. To be taken to this page, click <n nav Menu->My Profile->Edit PH and Email> here </nav>."],
-    "context": ""},
-  {"tag": "changepersonalinfo",
-    "patterns":  ["How do I change my name?","How do I change my birthday","I want to change my birthdate" ],
-    "responses": ["To change your name or birthdate, please connect with your employment counsellor. Click the 'Messages' tab and send a message to your employment counsellor. Additionally, you can contact your WorkBC centre to be connected directly with your employment counsellor."],
-    "context": ""},
-  {"tag": "changecontact",
-    "patterns":  ["How do I change how WorkBC contacts me?","How do I change it to only get text messages","How do I change it to only emails" ],
-    "responses": ["To change how you received communications from WorkBC, click the menu icon in the upper right corner and select 'My Profile'. There you can select to receive communications from WorkBC either by 'Email','Text', or 'Text and Email'."],
-    "context": ""},
-  {"tag": "privacy",
-    "patterns":  ["How do I the End User License Agreement?","How do I see the Privacy Policy for this app"],
-    "responses": ["To see the End User License Agreement for the WorkBC mobile app, click the menu icon in the upper right corner and select 'About'. Or click<n nav menu->About> here</n>."],
-    "context": ""},
-  {"tag":  "noanswer",
-  "patterns": [""],
-  "responses":  ["I'm sorry I don't understand.", "Could you phrase that differently for me?", "Not sure I understand."],
-  "context": ""}
-]}
+{
+    "intents": [
+        {
+            "tag": "greetingEN",
+            "patterns": [
+                "Hi There",
+                "Howdy",
+                "Is anyone there?",
+                "Hola",
+                "Hello",
+                "hey",
+                "hi",
+                "greetings",
+                "aloha"
+            ],
+            "responses": [
+                "Hello!",
+                "Good to see you!",
+                "Hi there, how can I help you?"
+            ],
+            "context": ""
+        },
+        {
+            "tag": "greetingFR",
+            "patterns": [
+                "Salut",
+                "All\u00f4",
+                "Y a quelqu'un?",
+                "Bonjour",
+                "salutations"
+            ],
+            "responses": [
+                "Bonjour!",
+                "Heureux de vous voir!",
+                "Bonjour, comment puis-je vous aider?"
+            ],
+            "context": ""
+        },
+        {
+            "tag": "goodbyeEN",
+            "patterns": [
+                "Bye",
+                "See you later",
+                "Goodbye",
+                "Nice chatting with you, Bye",
+                "Till next time",
+                "Bye, Have a good day!"
+            ],
+            "responses": [
+                "See you!",
+                "Goodbye!",
+                "Have a nice day!",
+                "Bye! Please come back again soon. :-)"
+            ],
+            "context": ""
+        },
+        {
+            "tag": "goodbyeFR",
+            "patterns": [
+                "Au revoir",
+                "\u00c0 plus tard",
+                "Salut",
+                "Content d'avoir parl\u00e9 avec vous, salut",
+                "\u00c0 la prochaine",
+                "Au revoir, Passez une belle journ\u00e9e!"
+            ],
+            "responses": [
+                "\u00c0 bient\u00f4t!",
+                "Au revoir!",
+                "Passez une belle journ\u00e9e!",
+                "Salut! Revenez nous voir bient\u00f4t. :-)"
+            ],
+            "context": ""
+        },
+        {
+            "tag": "helpEN",
+            "patterns": [
+                "I need some help",
+                "Can you help me?",
+                "I am in need of assistance"
+            ],
+            "responses": [
+                "BiOf course. what do you need help with?",
+                "How can I be of assistance?"
+            ],
+            "context": ""
+        },
+        {
+            "tag": "helpFR",
+            "patterns": [
+                "J'ai besoin d'aide",
+                "Pouvez-vous m'aider?",
+                "J'ai besoin d'assistance"
+            ],
+            "responses": [
+                "Certainement. Pour quelle raison avez-vous besoin d'aide?",
+                "Comment puis-je vous aider?"
+            ],
+            "context": ""
+        },
+        {
+            "tag": "purposeEN",
+            "patterns": [
+                "What is your purpose?",
+                "What can you do?",
+                "How can you help me?",
+                "What do you do?"
+            ],
+            "responses": [
+                "I can help navigate you through this app. For example, if you want to know how to find WorkBC Services, or search for jobs I can provide you with the steps."
+            ],
+            "context": ""
+        },
+        {
+            "tag": "purposeFR",
+            "patterns": [
+                "Quel est votre r\u00f4le?",
+                "Que pouvez-vous faire?",
+                "Comment pouvez-vous m'aider?",
+                "Que faites-vous?"
+            ],
+            "responses": [
+                "Je peux vous aider \u00e0 parcourir cette application. Par exemple, si vous souhaitez d\u00e9couvrir comment trouver les services de WorkBC ou effectuer une recherche d'emploi, je peux vous fournir la marche \u00e0 suivre pour y parvenir."
+            ],
+            "context": ""
+        },
+        {
+            "tag": "thanksEN",
+            "patterns": [
+                "Thanks",
+                "Thank you",
+                "That's helpful, thanks",
+                "Awesome thanks",
+                "Thanks for helping me",
+                "Thanks a lot"
+            ],
+            "responses": [
+                "Happy to help",
+                "Anytime",
+                "No problem",
+                "My pleasure"
+            ],
+            "context": ""
+        },
+        {
+            "tag": "thanksFR",
+            "patterns": [
+                "Merci",
+                "Je vous remercie",
+                "Cela m'a aid\u00e9, merci",
+                "Super, merci",
+                "Merci de m'avoir aid\u00e9",
+                "Merci beaucoup"
+            ],
+            "responses": [
+                "Heureux de vous aider",
+                "Volontiers",
+                "Pas de probl\u00e8me",
+                "Avec plaisir"
+            ],
+            "context": ""
+        },
+        {
+            "tag": "workbcServicesEN",
+            "patterns": [
+                "Where can I find out more about WorkBC Services?",
+                "What are WorkBC Services",
+                "Do I qualify for WorkBC Services?"
+            ],
+            "responses": [
+                "WorkBC Services support you in finding a job and keeping it. Services are available to all unemployed or precariously employed B.C. citizens legally eligible to work in B.C. To learn more about WorkBC Services, visit <a href='https://www.workbc.ca/Employment-Services.aspx'>workbc.ca/Employment Services</a>"
+            ],
+            "context": ""
+        },
+        {
+            "tag": "workbcServicesFR",
+            "patterns": [
+                "O\u00f9 puis-je en apprendre plus au sujet des services de WorkBC?",
+                "Quels sont les services de WorkBC ",
+                "Suis-je admissible aux services de WorkBC?"
+            ],
+            "responses": [
+                "Les services \u00e0 l'emploi de WorkBC vous aident \u00e0 trouver un emploi, et \u00e0 le conserver. Les services sont offerts \u00e0 tous les citoyens de la Colombie-Britannique sans emploi ou ayant un emploi pr\u00e9caire et qui sont l\u00e9galement admissibles \u00e0 travailler en Colombie-Britannique. Pour en savoir plus au sujet des services de WorkBC, veuillez consulter <a href='https://www.workbc.ca/Employment-Services.aspx'>workbc.ca/Employment Services</a>"
+            ],
+            "context": ""
+        },
+        {
+            "tag": "precariouslyemployedEN",
+            "patterns": [
+                "What is precariously employed?",
+                "What does precariously employed mean?"
+            ],
+            "responses": [
+                "'Precariously employed' means one who does not meet the WorkBC Employment Services program definition of 'unemployed', but does meet one or more additional criteria. For more information on what those criteria are, visit <a href='https://www.workbc.ca/Employment-Services/WorkBC-Centres/Employment-Services.aspx'>workbc.ca/Employment Services</a>"
+            ],
+            "context": ""
+        },
+        {
+            "tag": "precariouslyemployedFR",
+            "patterns": [
+                "Qu'est-ce qu'un emploi pr\u00e9caire?",
+                "Que signifie avoir un emploi pr\u00e9caire?"
+            ],
+            "responses": [
+                "\u00ab Personne ayant un emploi pr\u00e9caire \u00bb se dit d'une personne qui ne r\u00e9pond pas \u00e0 la d\u00e9finition de \u00ab ch\u00f4meur \u00bb tel que d\u00e9fini dans le cadre du programme de services \u00e0 l'emploi de WorkBC, mais qui r\u00e9pond \u00e0 un ou plusieurs crit\u00e8res suppl\u00e9mentaires. Pour de plus amples renseignements \u00e0 propos de ces crit\u00e8res, veuillez consulter <a href='https://www.workbc.ca/Employment-Services/WorkBC-Centres/Employment-Services.aspx'>workbc.ca/Employment Services</a>"
+            ],
+            "context": ""
+        },
+        {
+            "tag": "epbcEN",
+            "patterns": [
+                "What is EPBC?",
+                "What happened to EPBC?",
+                "Is EPBC the same as WorkBC?"
+            ],
+            "responses": [
+                "WorkBC Employment Services is what the EPBC program is now referred to. For more information, visit <a href='https://www.workbc.ca/Employment-Services.aspx'>workbc.ca/Employment Services</a>"
+            ],
+            "context": ""
+        },
+        {
+            "tag": "epbcFR",
+            "patterns": [
+                "Qu'est-ce que EPBC?",
+                "Qu'est-il advenu de EPBC?",
+                "Est-ce que EPBC est la m\u00eame chose que WorkBC?"
+            ],
+            "responses": [
+                "Les services \u00e0 l'emploi de WorkBC ont remplac\u00e9 le programme Employment program of BC (EPBC). Pour en savoir plus, veuillez consulter <a href='https://www.workbc.ca/Employment-Services.aspx'>workbc.ca/Employment Services</a>"
+            ],
+            "context": ""
+        },
+        {
+            "tag": "workbcCentreEN",
+            "patterns": [
+                "What is a WorkBC Centre?",
+                "What is a WorkBC Center?",
+                "What can a WorkBC Centre do for me?",
+                "What can a WorkBC Center do for me?",
+                "What is a centre?",
+                "What is a center?"
+            ],
+            "responses": [
+                "WorkBC Centres help connect you with resources that can assist you with gaining and sustaining employment. To learn more, visit <a href='https://www.workbc.ca/Employment-Services/WorkBC-Centres.aspx'>workbc.ca/Employment Services/WorkBC Centres</a>"
+            ],
+            "context": ""
+        },
+        {
+            "tag": "workbcCentreFR",
+            "patterns": [
+                "Qu'est-ce qu'un Centre WorkBC?",
+                "Qu'est-ce qu'un Centre WorkBC?",
+                "Comment un Centre WorkBC peut-il m'aider?",
+                "Comment un Centre WorkBC peut-il m'aider?",
+                "Qu'est-ce qu'un centre?",
+                "Qu'est-ce qu'un centre?"
+            ],
+            "responses": [
+                "Les Centres WorkBC vous mettent en rapport avec des ressources qui peuvent vous aider \u00e0 trouver un emploi et \u00e0 le conserver. Pour en savoir plus, veuillez consulter <a href='https://www.workbc.ca/Employment-Services/WorkBC-Centres.aspx'>workbc.ca/Employment Services/WorkBC Centres</a>"
+            ],
+            "context": ""
+        },
+        {
+            "tag": "esEN",
+            "patterns": [
+                "What does ES stand for?",
+                "What are Employment Services?",
+                "What is WorkBC Employment Services?",
+                "What is ES?",
+                "What is WES?"
+            ],
+            "responses": [
+                "WorkBC Employment Services provide supports through a WorkBC Centre. To learn more, visit <a href='https://www.workbc.ca/Employment-Services/WorkBC-Centres/Employment-Services.aspx'> workbc.ca/Employment Services/WorkBC Centres/Employment Services</a>"
+            ],
+            "context": ""
+        },
+        {
+            "tag": "esFR",
+            "patterns": [
+                "Que veut dire ES?",
+                "Quels sont les services \u00e0 l'emploi?",
+                "Quels sont les services \u00e0 l'emploi de WorkBC?",
+                "Que veut dire WES?"
+            ],
+            "responses": [
+                "Les services \u00e0 l'emploi de WorkBC offrent des mesures de soutien par le biais des Centres WorkBC. Pour en savoir plus, veuillez consulter <a href='https://www.workbc.ca/Employment-Services/WorkBC-Centres/Employment-Services.aspx'> workbc.ca/Employment Services/WorkBC Centres/Employment Services</a>"
+            ],
+            "context": ""
+        },
+        {
+            "tag": "ssEN",
+            "patterns": [
+                "What does SS stand for?",
+                "What are Self-Services?",
+                "What is WorkBC Employment Services Self-Serve?",
+                "What are WorkBC Self-Serve Services?",
+                "What is SS?"
+            ],
+            "responses": [
+                "You can browse job listings, find helpful tools and information online, or visit a WorkBC Centre for additional resources. To learn more, visit <a href='https://www.workbc.ca/Employment-Services/WorkBC-Centres/Self-Serve-Services.aspx'> workbc.ca/Employment Services/WorkBC Centres/Self-Serve</a>"
+            ],
+            "context": ""
+        },
+        {
+            "tag": "ssFR",
+            "patterns": [
+                "Que veut dire SS?",
+                "Quels sont les services libre-service?",
+                "Quels sont les services \u00e0 l'emploi libre-service de WorkBC?",
+                "Quels sont les services libre-service de WorkBC?"
+            ],
+            "responses": [
+                "Vous pouvez consulter des offres d'emploi, trouver des ressources et des renseignements utiles en ligne, ou aller \u00e0 un Centre WorkBC pour obtenir des ressources suppl\u00e9mentaires. Pour en savoir plus, veuillez consulter <a href='https://www.workbc.ca/Employment-Services/WorkBC-Centres/Self-Serve-Services.aspx'> workbc.ca/Employment Services/WorkBC Centres/Self-Serve</a>"
+            ],
+            "context": ""
+        },
+        {
+            "tag": "atsEN",
+            "patterns": [
+                "What does ATS stand for?",
+                "What are Assistive Technology Services?",
+                "What is WorkBC Assistive Technology Services?",
+                "What is ATS",
+                "I have a disability, what services do you provide?",
+                "I need assistive equipment",
+                "I need an assistive device"
+            ],
+            "responses": [
+                "Assistive Technology Services provides equipment and devices to help individuals thrive in the workplace. To learn more, visit <a href=https://www.workbc.ca/Employment-Services/Assistive-Technology-Services.aspx'> workbc.ca/Assistive Technology Services </a>"
+            ],
+            "context": ""
+        },
+        {
+            "tag": "atsFR",
+            "patterns": [
+                "Que veut dire ATS?",
+                "Quels sont les services de technologie d'assistance?",
+                "Quels sont les services de technologie d'assistance de WorkBC?",
+                "Que d\u00e9signe ATS",
+                "J'ai un handicap, quels services offrez-vous?",
+                "J'ai besoin d'\u00e9quipement fonctionnel",
+                "J'ai besoin d'un appareil fonctionnel"
+            ],
+            "responses": [
+                "Les services de technologie d'assistance fournissent de l'\u00e9quipement et des dispositifs pour aider les individus \u00e0 s'\u00e9panouir sur leur lieu de travail. Pour en savoir plus, veuillez consulter <a href=https://www.workbc.ca/Employment-Services/Assistive-Technology-Services.aspx'> workbc.ca/Assistive Technology Services </a>"
+            ],
+            "context": ""
+        },
+        {
+            "tag": "apprenticeEN",
+            "patterns": [
+                "What does AS stand for?",
+                "What are Apprentice Services?",
+                "What is WorkBC Apprentice Services?",
+                "I'm an apprentice, what help can I get?",
+                "I'm an apprentice, what services do you provide?",
+                "I'm in school and need financial assistance.",
+                "As an apprentice in training, do you offer financial support?"
+            ],
+            "responses": [
+                "Apprentice financial supports are available to eligible apprentices while they\u2019re completing their classroom apprenticeship training. See if you\u2019re eligible, learn how to apply and access online supports. To learn more, visit <a href='https://www.workbc.ca/Employment-Services/Apprentice-Services.aspx'> workbc.ca/Apprentice Services</a>"
+            ],
+            "context": ""
+        },
+        {
+            "tag": "apprenticeFR",
+            "patterns": [
+                "Que veut dire AS?",
+                "Quels sont les services aux apprentis?",
+                "Quels sont les services aux apprentis de WorkBC?",
+                "Je suis apprenti, quel type d'aide puis-je obtenir? ",
+                "Je suis apprenti, quels services offrez-vous?",
+                "Je fr\u00e9quente l'\u00e9cole, et j'ai besoin d'aide financi\u00e8re.",
+                "Je suis apprenti en formation, m'offrez-vous une aide financi\u00e8re?"
+            ],
+            "responses": [
+                "De l\u2019aide financi\u00e8re est mise \u00e0 la disposition des apprentis admissibles pendant qu\u2019ils effectuent leur formation d\u2019apprenti en classe. Voyez si vous \u00eates admissible, apprenez comment faire une demande et acc\u00e9der \u00e0 des mesures de soutien en ligne. Pour en savoir plus, veuillez consulter <a href='https://www.workbc.ca/Employment-Services/Apprentice-Services.aspx'> workbc.ca/Apprentice Services</a>"
+            ],
+            "context": ""
+        },
+        {
+            "tag": "oesEN",
+            "patterns": [
+                "Where can I find out more about OES?",
+                "What does OES stand for?",
+                "Where can I find more information about Online Employment Services?"
+            ],
+            "responses": [
+                "The WorkBC Online Employment Services (OES) portal provides direct communications with WorkBC staff and access to a range of services and supports anytime. The WorkBC app is an extension of OES, providing additional supports for searching jobs via WorkBC.ca as well as tracking and actioning items on your to-do list. To learn more about OES, visit <a href='https://www.workbc.ca/Employment-Services/WorkBC-Centres/Online-Employment-Services.aspx'>workbc.ca/Online Employment Services</a>"
+            ],
+            "context": ""
+        },
+        {
+            "tag": "oesFR",
+            "patterns": [
+                "O\u00f9 puis-je en apprendre plus au sujet des services \u00e0 l'emploi en ligne?",
+                "Que veut dire OES?",
+                "O\u00f9 puis-je obtenir de plus amples renseignements au sujet des services \u00e0 l'emploi en ligne?"
+            ],
+            "responses": [
+                "Le portail des services \u00e0 l'emploi en ligne (OES) de WorkBC permet de communiquer directement avec des employ\u00e9s des services \u00e0 l'emploi en ligne, et offre un acc\u00e8s \u00e0 un \u00e9ventail de services et de mesures de soutien en tout temps. L'application WorkBC se veut un prolongement des services \u00e0 l'emploi en ligne; elle offre des mesures de soutien suppl\u00e9mentaires en vue de chercher un emploi sur le site WorkBC.ca, et vous permet de suivre et de g\u00e9rer les \u00e9l\u00e9ments de votre liste de choses \u00e0 faire. Pour en savoir plus au sujet des services \u00e0 l'emploi en ligne, veuillez consulter <a href='https://www.workbc.ca/Employment-Services/WorkBC-Centres/Online-Employment-Services.aspx'>workbc.ca/Online Employment Services</a>"
+            ],
+            "context": ""
+        },
+        {
+            "tag": "otherPortalsCheckEN",
+            "patterns": [
+                "Is this the same as My Self Serve?",
+                "Is this the same as MySS?",
+                "Is this the same as My Family Services?",
+                "Is this the same as MyFS?"
+            ],
+            "responses": [
+                "Access to My Self Serve (MySS) and/or My Family Services (MyFS) is managed separately from access to the WorkBC app and Online Employment Services (OES)."
+            ],
+            "context": ""
+        },
+        {
+            "tag": "otherPortalsCheckFR",
+            "patterns": [
+                "Est-ce le m\u00eame service que My Self Serve?",
+                "Est-ce le m\u00eame service que MySS?",
+                "Est-ce le m\u00eame service que My Family Services?",
+                "Est-ce le m\u00eame service que  MyFS?"
+            ],
+            "responses": [
+                "L'acc\u00e8s aux services libre-service (My Self Serve, ou MySS) et aux services familiaux My Family Services (MyFS) est g\u00e9r\u00e9 de fa\u00e7on distincte de l'acc\u00e8s \u00e0 l'application WorkBC et aux services \u00e0 l'emploi en ligne."
+            ],
+            "context": ""
+        },
+        {
+            "tag": "locationEN",
+            "patterns": [
+                "How do I change my location?",
+                "How do I change the area I'm searching a job for?",
+                "Can I search for jobs in a different city?",
+                "Can I search for jobs in a different location?"
+            ],
+            "responses": [
+                "To change the location of your job search, navigate to <a href='workbc-test://app/Job/Landing'>'Job Search'</a> and select 'Change Location'. Note that you can search all of BC by entering 'BC' or 'British Columbia'."
+            ],
+            "context": ""
+        },
+        {
+            "tag": "locationFR",
+            "patterns": [
+                "Comment puis-je modifier mon emplacement?",
+                "Comment puis-je modifier la r\u00e9gion dans laquelle je cherche un emploi?",
+                "Puis-je chercher un emploi dans une autre ville?",
+                "Puis-je chercher un emploi dans un endroit diff\u00e9rent?"
+            ],
+            "responses": [
+                "Pour modifier l'emplacement de votre recherche d'emploi, rendez-vous sur l'onglet <a href='workbc-test://app/Job/Landing'>\u00ab Recherche d'emploi \u00bb</a>, puis s\u00e9lectionnez \u00ab Changer l'emplacement \u00bb. Veuillez prendre note que vous pouvez chercher un emploi \u00e0 l'\u00e9chelle de la Colombie-Britannique en saisissant \u00ab C.-B. \u00bb ou \u00ab Colombie-Britannique \u00bb."
+            ],
+            "context": ""
+        },
+        {
+            "tag": "languageEN",
+            "patterns": [
+                "How do I change my language?",
+                "How do I switch to French?",
+                "How do I switch to English?"
+            ],
+            "responses": [
+                "To change your preferred language for WorkBC Services, click the menu icon in the upper right corner, select 'My Profile', then the pencil icon, update your language and select the 'Update' button. You can change the display language for the app under <a href='workbc-test://app/Account/Settings'>'Settings'</a>, 'Language'."
+            ],
+            "context": ""
+        },
+        {
+            "tag": "languageFR",
+            "patterns": [
+                "Comment puis-je modifier la langue?",
+                "Comment puis-je passer au fran\u00e7ais?",
+                "Comment puis-je passer \u00e0 l'anglais?"
+            ],
+            "responses": [
+                "Pour modifier votre langue de pr\u00e9f\u00e9rence en vue d'acc\u00e9der aux services de WorkBC, cliquez sur l'ic\u00f4ne de menu situ\u00e9e dans le coin sup\u00e9rieur droit, s\u00e9lectionnez \u00ab Mon profil \u00bb, puis l'ic\u00f4ne en forme de crayon, mettez \u00e0 jour votre langue, puis cliquez sur le bouton \u00ab Mettre \u00e0 jour \u00bb. Vous pouvez modifier la langue d'affichage de l'application dans l'option <a href='workbc-test://app/Account/Settings'>\u00ab Param\u00e8tres \u00bb</a>, puis \u00ab Langue \u00bb."
+            ],
+            "context": ""
+        },
+        {
+            "tag": "supportedlanguagesEN",
+            "patterns": [
+                "What languages are supported?",
+                "Can I get services in Mandarin?",
+                "Can I get services in Cantonese?",
+                "Can I get services in Japanese?",
+                "Can I get services in Spanish?",
+                "Can I get services in Punjabi?",
+                "Can I get services in German?",
+                "Can I get services in Tagalog?",
+                "Can I get services in Korean?",
+                "Can I get services in Farsi?"
+            ],
+            "responses": [
+                "The supported languages for WorkBC Employment Services at this time are English and French."
+            ],
+            "context": ""
+        },
+        {
+            "tag": "supportedlanguagesFR",
+            "patterns": [
+                "En quelles langues les services sont-ils offerts?",
+                "Puis je obtenir des services en mandarin?",
+                "Puis je obtenir des services en cantonais?",
+                "Puis je obtenir des services en japonais?",
+                "Puis je obtenir des services en espagnol?",
+                "Puis je obtenir des services en panjabi?",
+                "Puis je obtenir des services en allemand?",
+                "Puis je obtenir des services en tagalog?",
+                "Puis je obtenir des services en cor\u00e9en?",
+                "Puis je obtenir des services en farsi?"
+            ],
+            "responses": [
+                "Les services \u00e0 l'emploi de WorkBC ne sont offerts qu'en anglais et en fran\u00e7ais pour le moment."
+            ],
+            "context": ""
+        },
+        {
+            "tag": "jobsearchEN",
+            "patterns": [
+                "How do I search for a job?",
+                "I need to find a job",
+                "I'm looking for a job",
+                "Find a job",
+                "I need a job"
+            ],
+            "responses": [
+                "To search for a job, select  <a href='workbc-test://app/Job/Landing'>'Job Search'</a> on the bottom tab bar, or select   <a href='workbc-test://app/Job/Landing'>'Search for Jobs'</a> via the menu icon in the upper right corner, and enter you your job search keyword(s)."
+            ],
+            "context": ""
+        },
+        {
+            "tag": "jobsearchFR",
+            "patterns": [
+                "Comment puis-je chercher un emploi?",
+                "Je dois trouver un emploi",
+                "Je cherche un emploi",
+                "Trouver un emploi",
+                "J'ai besoin d'un emploi"
+            ],
+            "responses": [
+                "Pour effectuer une recherche d'emploi, s\u00e9lectionnez <a href='workbc-test://app/Job/Landing'>\u00ab Recherche d'emploi \u00bb</a> dans la barre des onglets inf\u00e9rieure, ou s\u00e9lectionnez <a href='workbc-test://app/Job/Landing'>\u00ab Trouver des emplois \u00bb</a> en utilisant l'ic\u00f4ne de menu dans le coin sup\u00e9rieur droit, et saisissez les mots cl\u00e9s de votre recherche d'emploi."
+            ],
+            "context": ""
+        },
+        {
+            "tag": "newjobsEN",
+            "patterns": [
+                "Where are the new jobs?",
+                "How do I see the latest job postings?",
+                "Is there a way to only look at new jobs?"
+            ],
+            "responses": [
+                "To view the latest job postings, select 'Job Search' on the bottom tab bar then <a href='workbc-test://app/Job/New'>'New Jobs'</a>."
+            ],
+            "context": ""
+        },
+        {
+            "tag": "newjobsFR",
+            "patterns": [
+                "O\u00f9 sont les nouveaux emplois?",
+                "Comment puis-je consulter les derni\u00e8res offres d'emploi?",
+                "Y a-t-il une fa\u00e7on de consulter uniquement les nouveaux emplois?"
+            ],
+            "responses": [
+                "Pour consulter les derni\u00e8res offres d'emploi, s\u00e9lectionnez \u00ab Recherche d'emploi \u00bb dans la barre des onglets inf\u00e9rieure, puis <a href='workbc-test://app/Job/New'>\u00ab Nouveaux emplois \u00bb</a>."
+            ],
+            "context": ""
+        },
+        {
+            "tag": "savedjobsEN",
+            "patterns": [
+                "Where are my saved jobs?",
+                "I saved a job posting and I can't find it",
+                "Can I save jobs I look at?"
+            ],
+            "responses": [
+                "To view your saved job postings, select 'Job Search' on the bottom tab bar then <a href='workbc-test://app/Job/Saved'>'Saved Jobs'</a>, or select <a href='workbc-test://app/Job/Saved'>Saved Jobs>'My Saved Jobs'</a> via the menu icon in the upper right corner. Note that jobs are saved to the app on your specific device, so if you logout of the app or install the app on a different device, your saved jobs will be lost."
+            ],
+            "context": ""
+        },
+        {
+            "tag": "savedjobsFR",
+            "patterns": [
+                "O\u00f9 sont mes emplois sauvegard\u00e9s?",
+                "J'ai sauvegard\u00e9 une offre d'emploi, et je ne la trouve pas.",
+                "Puis-je sauvegarder les emplois que je consulte?"
+            ],
+            "responses": [
+                "Pour consulter vos offres d'emploi sauvegard\u00e9es, s\u00e9lectionnez \u00ab Recherche d'emploi \u00bb dans la barre des onglets inf\u00e9rieure, puis <a href='workbc-test://app/Job/Saved'>\u00ab Emplois sauvegard\u00e9s \u00bb</a>, ou s\u00e9lectionnez <a href='workbc-test://app/Job/Saved'>\u00ab Mes emplois sauvegard\u00e9s \u00bb</a> \u00e0 l'aide de l'ic\u00f4ne de menu situ\u00e9e dans le coin sup\u00e9rieur droit. Veuillez prendre note que les emplois sont sauvegard\u00e9s dans l'application sur votre appareil particulier; si vous vous d\u00e9connectez de l'application ou installez l'application sur un autre appareil, vous perdrez vos emplois sauvegard\u00e9s."
+            ],
+            "context": ""
+        },
+        {
+            "tag": "recentjobsEN",
+            "patterns": [
+                "Where can I find the recently viewed jobs?",
+                "I saw a job posting, where can I view it again?",
+                "Can I quickly find a job I saw?",
+                "Can I find a job I looked at?"
+            ],
+            "responses": [
+                "To view recently viewed job postings, select 'Job Search' on the bottom tab bar then <a href='workbc-test://app/Job/Viewed'>'Recently Viewed'</a>. Note that recently viewed jobs are saved to the app on your specific device, so if you logout of the app or install the app on a different device, your recently viewed jobs will be lost."
+            ],
+            "context": ""
+        },
+        {
+            "tag": "recentjobsFR",
+            "patterns": [
+                "O\u00f9 puis-je trouver les emplois consult\u00e9s r\u00e9cemment?",
+                "J'ai vu une offre d'emploi, o\u00f9 puis-je la consulter \u00e0 nouveau?",
+                "Puis-je trouver rapidement un emploi que j'ai consult\u00e9?",
+                "Puis-je trouver un emploi que j'ai consult\u00e9?"
+            ],
+            "responses": [
+                "Pour consulter des offres emplois consult\u00e9es r\u00e9cemment, s\u00e9lectionnez \u00ab Recherche d'emploi \u00bb dans la barre des onglets inf\u00e9rieure, puis <a href='workbc-test://app/Job/Viewed'>\u00ab consult\u00e9s r\u00e9cemment \u00bb</a>. Veuillez prendre note que les emplois consult\u00e9s r\u00e9cemment sont sauvegard\u00e9s dans l'application sur votre appareil particulier; si vous vous d\u00e9connectez de l'application ou installez l'application sur un autre appareil, vous perdrez vos emplois consult\u00e9s r\u00e9cemment."
+            ],
+            "context": ""
+        },
+        {
+            "tag": "recentjobsearchEN",
+            "patterns": [
+                "Where can I find my recent job searches?",
+                "I searched for a job, where can I see those searches again?"
+            ],
+            "responses": [
+                "To view recent job searches, select 'Job Search' on the bottom tab bar then <a href='workbc-test://app/Job/Search'>'Recent Job Searches'</a> or select <a href='workbc-test://app/Job/Search'>Recent Job Searches </a>. Note that recent job searches are saved to the app on your specific device, so if you logout of the app or install the app on a different device, your recent searches will be lost."
+            ],
+            "context": ""
+        },
+        {
+            "tag": "recentjobsearchFR",
+            "patterns": [
+                "O\u00f9 puis-je trouver mes recherches d'emploi r\u00e9centes?",
+                "J'ai cherch\u00e9 un emploi, O\u00f9 puis-je retrouver ces recherches?"
+            ],
+            "responses": [
+                "Pour consulter des recherches d'emplois r\u00e9centes, s\u00e9lectionnez \u00ab Recherche d'emploi \u00bb dans la barre des onglets inf\u00e9rieure, puis <a href='workbc-test://app/Job/Search'>\u00ab Recherches d'emploi r\u00e9centes \u00bb</a>, ou s\u00e9lectionnez<a href='workbc-test://app/Job/Search'>Recent Job Searches </a>. Veuillez prendre note que les recherches d'emploi r\u00e9centes sont sauvegard\u00e9es dans l'application sur votre appareil particulier; si vous vous d\u00e9connectez de l'application ou installez l'application sur un autre appareil, vous perdrez vos recherches d'emploi r\u00e9centes."
+            ],
+            "context": ""
+        },
+        {
+            "tag": "employmentcounsellorEN",
+            "patterns": [
+                "Where can I find my employment counsellor?",
+                "Who can help me find a job?",
+                "Who is my advisor?",
+                "Can I talk to WorkBC staff?"
+            ],
+            "responses": [
+                "To connect with your WorkBC Centre, you can send a secure message to your employment counsellor via 'Messages' on the bottom tab bar, or you can access contact information for your WorkBC Centre via the map under 'Find a WorkBC Centre' via the menu icon in the upper right corner: information on address, email, phone, website and hours of operation are available."
+            ],
+            "context": ""
+        },
+        {
+            "tag": "employmentcounsellorFR",
+            "patterns": [
+                "O\u00f9 puis-je trouver mon conseiller en emploi?",
+                "Qui peut m'aider \u00e0 trouver un emploi?",
+                "Qui est mon conseiller?",
+                "Puis-je parler \u00e0 un employ\u00e9 de WorkBC?"
+            ],
+            "responses": [
+                "Pour communiquer avec votre Centre WorkBC Centre, vous pouvez envoyer un message s\u00e9curis\u00e9 \u00e0 votre conseiller en emploi en cliquant sur le bouton \u00ab Messages \u00bb dans la barre des onglets inf\u00e9rieure, ou vous pouvez obtenir les coordonn\u00e9es de votre Centre WorkBC au moyen de la carte, dans l'onglet \u00ab Trouver un Centre WorkBC \u00bb \u00e0 l'aide de l'ic\u00f4ne de menu situ\u00e9e dans le coin sup\u00e9rieur droit; vous y trouverez des renseignements, notamment l'adresse, le courriel, le num\u00e9ro de t\u00e9l\u00e9phone, le site Web et les heures d'ouverture."
+            ],
+            "context": ""
+        },
+        {
+            "tag": "workbcapplicationEN",
+            "patterns": [
+                "Where can I find my WorkBC application?",
+                "Can I resume my WorkBC application?",
+                "I need to finish my WorkBC application",
+                "How can start a WorkBC application?"
+            ],
+            "responses": [
+                "To view your current WorkBC application or to create a new application, select 'Home' on the bottom tab bar, 'WorkBC Applications' then 'Create Application'."
+            ],
+            "context": ""
+        },
+        {
+            "tag": "workbcapplicationFR",
+            "patterns": [
+                "O\u00f9 puis-je trouver ma demande de WorkBC ?",
+                "Puis-je reprendre ma demande de WorkBC?",
+                "Je dois terminer de remplir ma demande de workBC",
+                "Comment puis-je commencer \u00e0 remplir une demande de WorkBC?"
+            ],
+            "responses": [
+                "Pour consulter votre demande d'emploi en cours de WorkBC, ou pour cr\u00e9er une nouvelle demande, s\u00e9lectionnez \u00ab Accueil \u00bb \u00bb dans la barre des onglets inf\u00e9rieure, puis \u00ab Demandes d'emploi de WorkBC \u00bb, puis \u00ab Cr\u00e9er une demande \u00bb."
+            ],
+            "context": ""
+        },
+        {
+            "tag": "findworkbcEN",
+            "patterns": [
+                "How do I contact WorkBC?",
+                "How do I find my local WorkBC centre?",
+                "Where is the closest WorkBC centre to me?",
+                "I need help contacting WorkBC"
+            ],
+            "responses": [
+                "To find your nearest WorkBC Centre, select the menu icon in the upper right corner, select <a href='workbc-test://app/WorkBC/Map'>'Find a WorkBC Centre'</a>, then in the 'Search' bar select 'Current location'."
+            ],
+            "context": ""
+        },
+        {
+            "tag": "findworkbcFR",
+            "patterns": [
+                "Comment puis-je communiquer avec WorkBC?",
+                "Comment puis-je trouver mon Centre WorkBC local?",
+                "O\u00f9 se trouve le Centre WorkBC le plus proche de chez moi?",
+                "J'ai besoin d'aide pour communiquer avec WorkBC"
+            ],
+            "responses": [
+                "Pour trouver le Centre WorkBC le plus proche de chez vous, s\u00e9lectionnez l'ic\u00f4ne de menu situ\u00e9e dans le coin sup\u00e9rieur droit, s\u00e9lectionnez <a href='workbc-test://app/WorkBC/Map'>\u00ab Trouver un Centre WorkBC \u00bb</a>, puis dans la barre de recherche, s\u00e9lectionnez \u00ab Emplacement actuel \u00bb."
+            ],
+            "context": ""
+        },
+        {
+            "tag": "discoverEN",
+            "patterns": [
+                "Where can I find out more about WorkBC Services?",
+                "What are the services that WorkBC offers?"
+            ],
+            "responses": [
+                "To find out more about WorkBC Services, select the menu icon in the upper right corner then <a href='workbc-test://app/WorkBC/About'>'Discover WorkBC Services'</a>."
+            ],
+            "context": ""
+        },
+        {
+            "tag": "discoverFR",
+            "patterns": [
+                "O\u00f9 puis-je en apprendre plus au sujet des services de WorkBC?",
+                "Quels sont les services offerts par WorkBC?"
+            ],
+            "responses": [
+                "Pour en savoir plus au sujet des services de WorkBC , s\u00e9lectionnez l'ic\u00f4ne de menu situ\u00e9e dans le coin sup\u00e9rieur droit, puis <a href='workbc-test://app/WorkBC/About'>\u00ab D\u00e9couvrez les services de WorkBC \u00bb</a>."
+            ],
+            "context": ""
+        },
+        {
+            "tag": "costEN",
+            "patterns": [
+                "Is WorkBC free?",
+                "What is the cost of WorkBC Services?",
+                "How much do I need to pay?"
+            ],
+            "responses": [
+                "WorkBC Employment Services is a government-funded program that helps you find and keep a job. In some cases, financial supports are available to assist you. For more information, visit <a href='https://www.workbc.ca/Employment-Services.aspx'>workbc.ca/Employment Services</a>"
+            ],
+            "context": ""
+        },
+        {
+            "tag": "costFR",
+            "patterns": [
+                "Les services de WorkBC sont-ils gratuits?",
+                "Quel est le co\u00fbt des services de WorkBC?",
+                "Combien dois-je payer?"
+            ],
+            "responses": [
+                "Les services \u00e0 l'emploi de WorkBC sont un programme financ\u00e9 par le gouvernement qui vous aide \u00e0 trouver un emploi et \u00e0 le conserver. Dans certains cas, une aide financi\u00e8re peut vous \u00eatre accord\u00e9e. Pour en savoir plus, veuillez consulter <a href='https://www.workbc.ca/Employment-Services.aspx'>workbc.ca/Employment Services</a>"
+            ],
+            "context": ""
+        },
+        {
+            "tag": "noaccountEN",
+            "patterns": [
+                "It says no BCeID account found",
+                "Why can't it find my BCeID account?",
+                "It says no BC Services Card account found",
+                "Why can't it find my BC Services Card account?"
+            ],
+            "responses": [
+                "The WorkBC app uses either your BC Services Card or Basic BCeID to authenticate you and allow you to access WorkBC Services. If your account information is not found using either of these methods, you will need to register. "
+            ],
+            "context": ""
+        },
+        {
+            "tag": "noaccountFR",
+            "patterns": [
+                "On m'avise qu'aucun compte BCeID n'a \u00e9t\u00e9 trouv\u00e9",
+                "Pourquoi ne puis-je pas trouver mon compte BCeID?",
+                "On m'avise qu'aucun compte li\u00e9 \u00e0 une carte BC Services n'a \u00e9t\u00e9 trouv\u00e9",
+                "Pourquoi ne puis-je pas trouver le compte li\u00e9 \u00e0 ma carte BC Services?"
+            ],
+            "responses": [
+                "L'application WorkBC utilise votre BC Services Card ou votre Basic BCeID afin de confirmer votre identit\u00e9 et de vous conf\u00e9rer l'acc\u00e8s aux services de WorkBC. Si ces m\u00e9thodes ne permettent pas de trouver les renseignements relatifs \u00e0 votre compte, vous devrez vous inscrire."
+            ],
+            "context": ""
+        },
+        {
+            "tag": "forgotpwEN",
+            "patterns": [
+                "I forgot my password",
+                "I lost my password"
+            ],
+            "responses": [
+                "If you have forgotten your Basic BCeID password, visit the <a href='https://www.bceid.ca/logon.aspx'>BCeID login page</a> for help. Note that to access the WorkBC app via your BC Services Card, you need to have the BC Services Card app set up on your device. For more information, visit <a href='https://www2.gov.bc.ca/gov/content?id=034E906146794F84A00535A3F9354913'>How to set up your BC Services Card app</a>."
+            ],
+            "context": ""
+        },
+        {
+            "tag": "forgotpwFR",
+            "patterns": [
+                "J'ai oubli\u00e9 mon mot de passe",
+                "J'ai perdu mon mot de passe"
+            ],
+            "responses": [
+                "Si vous avez oubli\u00e9 le mot de passe pour votre Basic BCeID, consultez <a href='https://www.bceid.ca/logon.aspx'>BCeID login page</a> pour obtenir de l'aide. Veuillez prendre note que vous devez installer l'application BC Services Card sur votre appareil pour acc\u00e9der \u00e0 l'application WorkBC \u00e0 l'aide de votre BC Services Card. Pour en savoir plus, veuillez consulter <a href='https://www2.gov.bc.ca/gov/content?id=034E906146794F84A00535A3F9354913'>How to set up your BC Services Card app</a>."
+            ],
+            "context": ""
+        },
+        {
+            "tag": "reginfoEN",
+            "patterns": [
+                "What information do I need to register?",
+                "What do you require to register?",
+                "How do I register?",
+                "How do I create an account?",
+                "Why do you need more information from me?",
+                "What additional information do you need to create an account?"
+            ],
+            "responses": [
+                "To register, you will need to set up an account using either your BC Services Card, or a Basic BCeID. We will also need some of your personal information such as Social Insurance Number (SIN) and birthdate in order to complete your registration. This information is protected under the Freedon of Information and Protection of Privacy Act (FOIPPA). For more information, review the privacy sections of the WorkBC app <a href='workbc-test://app/Account/About'>End User License Agreement</a>."
+            ],
+            "context": ""
+        },
+        {
+            "tag": "reginfoFR",
+            "patterns": [
+                "Quels renseignements dois-je indiquer pour m'inscrire?",
+                "De quoi ai-je besoin pour m'inscrire?",
+                "Comment puis-je m'inscrire?",
+                "Comment puis-je cr\u00e9er un compte?",
+                "Pourquoi avez-vous besoin d'autres renseignements de ma part?",
+                "De quels autres renseignements avez-vous besoin afin de cr\u00e9er un compte?"
+            ],
+            "responses": [
+                "Pour vous inscrire, vous devrez cr\u00e9er un compte \u00e0 l'aide de votre BC Services Card ou de votre Basic BCeID. Nous aurons \u00e9galement besoin de certains renseignements personnels, comme votre num\u00e9ro d'assurance sociale (NAS) et votre date de naissance afin de finaliser votre inscription. Ces renseignements sont prot\u00e9g\u00e9s en vertu de la Freedon of Information and Protection of Privacy Act (FOIPPA). Pour en savoir plus, veuillez consulter les sections qui portent sur la protection de la vie priv\u00e9e dans l'application WorkBC <a href='workbc-test://app/Account/About'>End User License Agreement</a>."
+            ],
+            "context": ""
+        },
+        {
+            "tag": "bcservicescardEN",
+            "patterns": [
+                "What is a BC Services Card?",
+                "How can I login with my BC Services Card?"
+            ],
+            "responses": [
+                "The BC Services Card allows users to authenticate to the WorkBC app via the BC Services Card app installed on your device. For more information, visit <a href='https://www2.gov.bc.ca/gov/content?id=034E906146794F84A00535A3F9354913'>How to set up your BC Services Card app</a>."
+            ],
+            "context": ""
+        },
+        {
+            "tag": "bcservicescardFR",
+            "patterns": [
+                "Qu'est-ce qu'une carte BC Services?",
+                "Comment puis-je me connecter \u00e0 l'aide de ma carte BC Services?"
+            ],
+            "responses": [
+                "La BC Services Card permet aux utilisateurs de confirmer leur identit\u00e9 afin d'utiliser l'application WorkBC \u00e0 l'aide de l'application BC Services Card install\u00e9e sur leur appareil. Pour en savoir plus, veuillez consulter <a href='https://www2.gov.bc.ca/gov/content?id=034E906146794F84A00535A3F9354913'>How to set up your BC Services Card app</a>."
+            ],
+            "context": ""
+        },
+        {
+            "tag": "upgradeEN",
+            "patterns": [
+                "I have a Basic BCeID and now want to use my BC Services Card",
+                "Can I use my BC Services Card even though I'm registered with a Basic BCeID?",
+                "Can I upgrade from Basic BCeID to BC Services Card?"
+            ],
+            "responses": [
+                "If you have a Basic BCeID, you can upgrade your access to use your BC Services Card. In order to do so, ensure you have the BC Services Card app installed on your device, then you can either upgrade from the 'Sign In' screen prior to login, or via the 'Upgrade' option under the menu icon in the upper right corner. For more information on how to set up the BC Services Card app, visit <a href='https://www2.gov.bc.ca/gov/content?id=034E906146794F84A00535A3F9354913'>How to set up your BC Services Card app</a>."
+            ],
+            "context": ""
+        },
+        {
+            "tag": "upgradeFR",
+            "patterns": [
+                "J'ai un Basic BCeID, et je souhaite maintenant utiliser ma carte BC Services",
+                "Puis-je utiliser ma carte BC Services, m\u00eame si je me suis inscrit(e) \u00e0 l'aide de mon Basic BCeID?",
+                "Puis-je passer d'un Basic BCeID \u00e0 une carte BC Services?"
+            ],
+            "responses": [
+                "Si vous avez un Basic BCeID, vous pouvez mettre \u00e0 niveau votre acc\u00e8s en vue d'utiliser votre BC Services Card. Pour ce faire, assurez-vous que l'application BC Services Card soit install\u00e9e sur votre appareil. Vous pourrez ensuite mettre \u00e0 niveau votre acc\u00e8s, soit dans l'\u00e9cran \u00ab Connexion \u00bb avant de vous connecter, soit \u00e0 l'aide de l'option \u00ab Mettre \u00e0 niveau \u00bb dans l'ic\u00f4ne de menu situ\u00e9e dans le coin sup\u00e9rieur droit. Pour en savoir plus sur la configuration de l'application BC Services Card, veuillez consulter <a href='https://www2.gov.bc.ca/gov/content?id=034E906146794F84A00535A3F9354913'>How to set up your BC Services Card app</a>."
+            ],
+            "context": ""
+        },
+        {
+            "tag": "bceidInfoEN",
+            "patterns": [
+                "Can I use my Personal BCeID to login?",
+                "Can I use my Business BCeID to login?"
+            ],
+            "responses": [
+                "You can login to the WorkBC app using either your BC Services Card or a Basic BCeID. Personal and/or Business BCeIDs are not supported."
+            ],
+            "context": ""
+        },
+        {
+            "tag": "bceidInfoFR",
+            "patterns": [
+                "Puis-je utiliser mon identifiant Personal BCeID pour me connecter?",
+                "Puis-je utiliser mon identifiant Business BCeID pour me connecter?"
+            ],
+            "responses": [
+                "Vous pouvez vous connecter \u00e0 l'application WorkBC \u00e0 l'aide de votre BC Services Card ou de votre Basic BCeID. Vous ne pouvez pas vous connecter \u00e0 l'aide des identifiants Personal BCeID ou Business BCeID."
+            ],
+            "context": ""
+        },
+        {
+            "tag": "homeEN",
+            "patterns": [
+                "What is the Home screen?",
+                "What does the Home button do?"
+            ],
+            "responses": [
+                "The 'Home' screen is the main area of the WorkBC app. Here you will have access to Messages, Job Search, WorkBC Case and Application information, and your Action Plan (or to-do list). You can also access additional functions and information via the menu icon in the upper right corner of the app."
+            ],
+            "context": ""
+        },
+        {
+            "tag": "homeFR",
+            "patterns": [
+                "Quelle est la page d'accueil?",
+                "Que fait le bouton Accueil?"
+            ],
+            "responses": [
+                "La page d'accueil est la page principale de l'application WorkBC. Elle vous permettra d'acc\u00e9der \u00e0 vos messages, vos recherches d'emploi, vos dossiers WorkBC et \u00e0 des renseignements relatifs \u00e0 vos demandes, ainsi qu'\u00e0 votre plan d'action (liste de choses \u00e0 faire). Vous pourrez \u00e9galement acc\u00e9der \u00e0 d'autres fonctionnalit\u00e9s et renseignements \u00e0 l'aide de l'ic\u00f4ne de menu situ\u00e9e dans le coin sup\u00e9rieur droit de l'application."
+            ],
+            "context": ""
+        },
+        {
+            "tag": "messagesEN",
+            "patterns": [
+                "What is the Messages screen?",
+                "What does the Messages button do?"
+            ],
+            "responses": [
+                "'Messages' allows you to communicate directly and securely with your WorkBC Centre, typically your employment counsellor. You can create new messages, reply to messages and send attachments. Messaging outside of WorkBC is not available."
+            ],
+            "context": ""
+        },
+        {
+            "tag": "messagesFR",
+            "patterns": [
+                "Quel est l'\u00e9cran des messages?",
+                "Que fait le bouton Message?"
+            ],
+            "responses": [
+                "'L'option \u00ab Messages \u00bb vous permet de communiquer directement, et de mani\u00e8re s\u00e9curis\u00e9e, avec votre Centre WorkBC Centre, habituellement avec votre conseiller en emploi. Vous pouvez cr\u00e9er de nouveaux messages, r\u00e9pondre \u00e0 des messages et envoyer des pi\u00e8ces jointes. Cette option ne vous permet que de communiquer avec WorkBC."
+            ],
+            "context": ""
+        },
+        {
+            "tag": "jobboardEN",
+            "patterns": [
+                "What is the Job board screen?",
+                "What does the Job Search button do?"
+            ],
+            "responses": [
+                "The 'Job Board' allows you to search WorkBC.ca jobs all from within the WorkBC app. You can search based on current location, or specified location, and you can save specific job postings, recently viewed postings and recent job searches within the app. You can also view new job postings (those posted within the last week) across British Columbia."
+            ],
+            "context": ""
+        },
+        {
+            "tag": "jobboardFR",
+            "patterns": [
+                "Quel est l'\u00e9cran du tableau d'emploi?",
+                "Que fait le bouton Recherche d'emploi?"
+            ],
+            "responses": [
+                "Le \u00ab tableau d'emploi \u00bb vous permet de chercher un emploi sur WorkBC.ca depuis l'application WorkBC. Vous pouvez effectuer des recherches en fonction de votre emplacement ou d'un emplacement en particulier, et vous pouvez sauvegarder des offres d'emploi, des offres consult\u00e9es r\u00e9cemment et des recherches d'emploi r\u00e9centes depuis l'application. Vous pouvez \u00e9galement consulter les nouvelles offres d'emploi (celles qui ont \u00e9t\u00e9 affich\u00e9es depuis la derni\u00e8re semaine) \u00e0 l'\u00e9chelle de la Colombie-Britannique."
+            ],
+            "context": ""
+        },
+        {
+            "tag": "actionplanEN",
+            "patterns": [
+                "What is an action plan?",
+                "What is a to-do list?",
+                "Where is my to do list?"
+            ],
+            "responses": [
+                "Your 'Action Plan' is specific to your WorkBC case and includes a list of action items your employment counsellor has assigned to you. You can view and sort action plan items by status, import due dates to your local device calendar, send your employment counsellor an update on an item, or mark an item as complete. You can also export all your action plan items to a PDF to save, email or print."
+            ],
+            "context": ""
+        },
+        {
+            "tag": "actionplanFR",
+            "patterns": [
+                "Qu'est-ce qu'un plan d'action?",
+                "Qu'est-ce qu'une liste de choses \u00e0 faire?",
+                "O\u00f9 est ma liste de choses \u00e0 faire?"
+            ],
+            "responses": [
+                "Votre \u00ab Plan d'action \u00bb est propre \u00e0 votre dossier WorkBC, et comprend la liste des \u00e9l\u00e9ments \u00e0 traiter indiqu\u00e9s par votre conseiller en emploi. Vous pouvez les afficher et les trier selon leur \u00e9tat d'avancement, importer les dates d'\u00e9ch\u00e9ances au calendrier de votre appareil, envoyer \u00e0 votre conseiller une mise \u00e0 jour relative \u00e0 un \u00e9l\u00e9ment, ou marquer un \u00e9l\u00e9ment comme \u00e9tant termin\u00e9. Vous pouvez \u00e9galement exporter les \u00e9l\u00e9ments \u00e0 traiter de votre plan d'action sous forme de document PDF en vue de le sauvegarder, l'envoyer par courriel ou l'imprimer."
+            ],
+            "context": ""
+        },
+        {
+            "tag": "changeinfoEN",
+            "patterns": [
+                "How do I change my email address?",
+                "How do I change my phone number?",
+                "How do I change to only use text for communications or notifications?",
+                "How do I change to only use email for communications or notifications?",
+                "How to I change to use both email and text for communications or notifications?",
+                "How to I change my language preferences for WorkBC?"
+            ],
+            "responses": [
+                "You can change your communication preferences, including email address, mobile phone number, notification method and preferred language (English or French) from 'My Profile' via the menu icon in the upper right corner of the app. Select the pencil, or edit, icon to edit your communication preferences. To save the changes, select the 'Update' button. Or select My Profile"
+            ],
+            "context": ""
+        },
+        {
+            "tag": "changeinfoFR",
+            "patterns": [
+                "Comment puis-je modifier mon adresse courriel?",
+                "Comment puis-je modifier mon num\u00e9ro de t\u00e9l\u00e9phone?",
+                "Comment puis-je modifier l'option me permettant de communiquer ou de recevoir des avis par messagerie texte uniquement ?",
+                "Comment puis-je modifier l'option me permettant de communiquer ou de recevoir des avis par courriel, ainsi que par messagerie texte ?",
+                "Comment puis-je modifier ma langue de pr\u00e9f\u00e9rence pour WorkBC?"
+            ],
+            "responses": [
+                "Vous pouvez \u00e9galement modifier vos pr\u00e9f\u00e9rences en mati\u00e8re de communication, y compris votre adresse courriel, votre num\u00e9ro de t\u00e9l\u00e9phone cellulaire, vos m\u00e9thodes d'avis et votre langue de pr\u00e9f\u00e9rence (anglais ou fran\u00e7ais) depuis l'onglet \u00ab Mon profil \u00bb \u00e0 l'aide de l'ic\u00f4ne de menu situ\u00e9e dans le coin sup\u00e9rieur droit de l'application. S\u00e9lectionnez l\u2019ic\u00f4ne du crayon afin de modifier vos pr\u00e9f\u00e9rences en mati\u00e8re de communication. Pour sauvegarder les modifications, cliquez sur le bouton \u00ab Mettre \u00e0 jour \u00bb ou s\u00e9lectionnez My Profile"
+            ],
+            "context": ""
+        },
+        {
+            "tag": "validateinfoEN",
+            "patterns": [
+                "How do I validate my email address?",
+                "How do I validate my phone or mobile number?",
+                "How do I verify my email address?",
+                "How do I verify my phone or mobile number?"
+            ],
+            "responses": [
+                "To verify your email address and/or mobile number for electronic notifications, select the menu icon in the upper right corner of the app and select 'My Profile'. A 'Verify' button will appear next to your email address and/or mobile number. Select the 'Verify' button you want to confirm the information for and follow the prompts. You will receive an 8-digit code via email for email address verification, and a 6-digit code via text for mobile verification."
+            ],
+            "context": ""
+        },
+        {
+            "tag": "validateinfoFR",
+            "patterns": [
+                "Comment puis-je valider mon adresse courriel?",
+                "Comment puis-je valider mon num\u00e9ro de t\u00e9l\u00e9phone ou de cellulaire?",
+                "Comment puis-je v\u00e9rifier mon adresse courriel?",
+                "Comment puis-je v\u00e9rifier mon num\u00e9ro de t\u00e9l\u00e9phone ou de cellulaire?"
+            ],
+            "responses": [
+                "Afin de v\u00e9rifier votre adresse courriel ou votre num\u00e9ro de t\u00e9l\u00e9phone cellulaire en vue de recevoir des avis \u00e9lectroniques, s\u00e9lectionnez l'ic\u00f4ne de menu dans le coin sup\u00e9rieur droit de l'application, puis \u00ab Mon profil \u00bb. Un bouton \u00ab V\u00e9rifier \u00bb s'affichera \u00e0 c\u00f4t\u00e9 de votre adresse courriel ou votre num\u00e9ro de t\u00e9l\u00e9phone cellulaire. S\u00e9lectionnez le bouton \u00ab V\u00e9rifier \u00bb qui concorde avec le renseignement que vous souhaitez confirmer, puis suivez les directives. Vous recevrez un code \u00e0 huit chiffres par courriel pour v\u00e9rifier votre adresse courriel, ou un code \u00e0 six chiffres par messagerie texte en vue de v\u00e9rifier votre num\u00e9ro de t\u00e9l\u00e9phone cellulaire."
+            ],
+            "context": ""
+        },
+        {
+            "tag": "changepersonalinfoEN",
+            "patterns": [
+                "How do I change my name?",
+                "How do I change my birthday",
+                "I want to change my birthdate",
+                "How do I update my address?",
+                "I've moved - how do I update my address?"
+            ],
+            "responses": [
+                "To change your name, birthdate, or address, please connect with your WorkBC Centre directly. You can send a secure message to your employment counsellor via 'Messages' on the bottom tab bar, or you can access contact information for your WorkBC Centre via the map under 'Find a WorkBC Centre' via the menu icon in the upper right corner: information on address, email, phone, website and hours of operation are available."
+            ],
+            "context": ""
+        },
+        {
+            "tag": "changepersonalinfoFR",
+            "patterns": [
+                "Comment puis-je modifier mon nom?",
+                "Comment puis-je modifier ma date de naissance",
+                "Je souhaite modifier ma date de naissance",
+                "Comment puis-je mettre \u00e0 jour mon adresse?",
+                "Je suis d\u00e9m\u00e9nag\u00e9(e) - comment puis-je mettre \u00e0 jour mon adresse?"
+            ],
+            "responses": [
+                "Pour modifier votre nom, votre date de naissance ou votre adresse, veuillez communiquer directement avec votre Centre WorkBC. Vous pouvez envoyer un message s\u00e9curis\u00e9 \u00e0 votre conseiller en emploi \u00e0 l'aide de l'onglet \u00ab Messages \u00bb dans la barre des onglets inf\u00e9rieure, ou vous pouvez obtenir les coordonn\u00e9es de votre Centre WorkBC \u00e0 l'aide de la carte, sous la rubrique \u00ab Trouver un Centre WorkBC \u00bb au moyen de l'ic\u00f4ne de menu situ\u00e9e dans le coin sup\u00e9rieur droit : vous y trouverez des renseignements comme l'adresse, l'adresse courriel, le num\u00e9ro de t\u00e9l\u00e9phone, le site Web et les heures d'ouverture."
+            ],
+            "context": ""
+        },
+        {
+            "tag": "privacyEN",
+            "patterns": [
+                "How do I view the End User License Agreement?",
+                "How do I see the Privacy Policy for this app?",
+                "Where do I find the Terms of Use?"
+            ],
+            "responses": [
+                "To review the End User License Agreement for the WorkBC app, select the menu icon in the upper right corner of the app and select 'Settings', then 'About'. Or select <a href='workbc-test://app/Account/About'>About</a>."
+            ],
+            "context": ""
+        },
+        {
+            "tag": "privacyFR",
+            "patterns": [
+                "Comment puis-je consulter l'accord de licence pour utilisateur final?",
+                "Comment puis-je consulter la politique de protection de la vie priv\u00e9e pour cette application?",
+                "O\u00f9 puis-je trouver les conditions d'utilisation?"
+            ],
+            "responses": [
+                "Pour consulter l'accord de licence pour utilisateur final, s\u00e9lectionnez l'ic\u00f4ne de menu dans le coin sup\u00e9rieur droit, s\u00e9lectionnez \u00ab Param\u00e8tres \u00bb, puis \u00ab \u00c0 propos \u00bb, ou s\u00e9lectionnez <a href='workbc-test://app/Account/About'>About</a>."
+            ],
+            "context": ""
+        },
+         {
+            "tag": "noanswerEN",
+            "patterns": [
+                "what",""
+            ],
+            "responses": [
+                "I'm sorry I don't understand.",
+                "Could you phrase that differently for me?",
+                "Not sure I understand."
+            ],
+            "context": ""
+        },
+        {
+            "tag": "noanswerFR",
+            "patterns": [
+                "Que",""
+            ],
+            "responses": [
+                "Je suis d\u00e9sol\u00e9, je n'ai pas compris.",
+                "Pourriez-vous formuler cela autrement pour moi?",
+                "Je ne suis pas certain de comprendre."
+            ],
+            "context": ""
+        }
+    ]
+}
