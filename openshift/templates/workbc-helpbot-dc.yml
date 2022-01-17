@@ -11,9 +11,9 @@ metadata:
     app.kubernetes.io/component: workbc-helpbot
     app.kubernetes.io/instance: workbc-helpbot
     app.kubernetes.io/name: python
-    app.kubernetes.io/part-of: workbc-api
+    app.kubernetes.io/part-of: wbc-app
     app.openshift.io/runtime: python
-    app.openshift.io/runtime-version: '3.6'
+    app.openshift.io/runtime-version: '3.9'
 spec:
   strategy:
     type: Rolling
@@ -23,7 +23,11 @@ spec:
       timeoutSeconds: 600
       maxUnavailable: 25%
       maxSurge: 25%
-    resources: {}
+    resources:
+      limits:
+        cpu: 150m
+      requests:
+        cpu: 50m
     activeDeadlineSeconds: 21600
   triggers:
     - type: ImageChange
@@ -33,7 +37,7 @@ spec:
           - workbc-helpbot
         from:
           kind: ImageStreamTag
-          namespace: 551bf1-dev
+          namespace: 551bf1-tools
           name: 'workbc-helpbot:latest'
     - type: ConfigChange
   replicas: 1

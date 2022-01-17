@@ -51,8 +51,8 @@ objects:
       sourceStrategy:
         from:
           kind: ImageStreamTag
-          namespace: openshift
-          name: 'python:3.6'
+          namespace: 551bf1-tools
+          name: 'python-39:1-24'
     postCommit: {}
     source:
       type: Git
