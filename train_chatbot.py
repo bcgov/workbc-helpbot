@@ -6,9 +6,12 @@ import pickle
 import numpy as np
 from keras.models import Sequential
 from keras.layers import *
-from keras.optimizers import SGD
+from tensorflow.keras.optimizers import SGD
 import random
-
+nltk.download('word_tokenize')
+nltk.download('punkt')
+nltk.download('wordnet')
+nltk.download('omw-1.4')
 #!/usr/bin/python
 words=[]
 classes = []
@@ -76,8 +79,8 @@ print("Training data created")
 model = Sequential()
 model.add(Dense(128, input_shape=(len(train_x[0]),), activation='relu'))
 model.add(Dropout(0.5))
-model.add(Dense(64, activation='relu'))
-model.add(Dropout(0.5))
+model.add(Dense(64, activation='sigmoid'))
+model.add(Dropout(0.4))
 model.add(Dense(len(train_y[0]), activation='softmax'))
 # Compile model. Stochastic gradient descent with Nesterov accelerated gradient gives good results for this model
 sgd = SGD(lr=0.01, decay=1e-6, momentum=0.9, nesterov=True)
