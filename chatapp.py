@@ -6,7 +6,12 @@ import numpy as np
 from keras.models import load_model
 import json
 import random
+import os
+from dotenv import load_dotenv
 
+load_dotenv()
+
+DEEP_LINKING = os.getenv('DEEP_LINKING')
 model = load_model('chatbot_model.h5')
 intents = json.loads(open('intents.json').read())
 words = pickle.load(open('words.pkl', 'rb'))
@@ -74,5 +79,6 @@ def chatbot_response(lang,text):
             res = random.choice(noAnswerEN)
         else:
             res = random.choice(noAnswerFR)
-
+    else:
+        res = res.replace('workbc-test', DEEP_LINKING)
     return res
