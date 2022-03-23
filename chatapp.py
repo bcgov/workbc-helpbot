@@ -11,7 +11,12 @@ model = load_model('chatbot_model.h5')
 intents = json.loads(open('intents.json').read())
 words = pickle.load(open('words.pkl', 'rb'))
 classes = pickle.load(open('classes.pkl', 'rb'))
-
+noAnswerEN = ["I'm sorry I don't understand.",
+                "Could you phrase that differently for me?",
+                "Not sure I understand."]
+noAnswerFR = ["Je suis d\u00e9sol\u00e9, je n'ai pas compris.",
+                "Pourriez-vous formuler cela autrement pour moi?",
+                "Je ne suis pas certain de comprendre."]
 def clean_up_sentence(sentence):
     # tokenize the pattern - split words into array
     sentence_words = nltk.word_tokenize(sentence)
@@ -39,7 +44,7 @@ def predict_class(sentence, model):
     p = bow(sentence, words, show_details=False)
     res = model.predict(np.array([p]))[0]
     print(res)
-    ERROR_THRESHOLD = 0.05
+    ERROR_THRESHOLD = 0.31
     results = [[i, r] for i, r in enumerate(res) if r > ERROR_THRESHOLD]
     # sort by strength of probability
     results.sort(key=lambda x: x[1], reverse=True)
@@ -58,7 +63,16 @@ def getResponse(ints, intents_json):
             break
     return result
 
-def chatbot_response(text):
+def chatbot_response(lang,text):
     ints = predict_class(text.lower(), model)
-    res = getResponse(ints, intents)
+    if not ints:
+        res = ""
+    else:
+        res = getResponse(ints, intents)
+    if(res == ""):
+        if(lang == "en"):
+            res = random.choice(noAnswerEN)
+        else:
+            res = random.choice(noAnswerFR)
+
     return res

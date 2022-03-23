@@ -12,9 +12,9 @@ SERVER_NAME = "0.0.0.0"
 app = Flask(__name__)  # create an app instance
 
 
-@app.route("/<response>")               # at the end point
-def create_response(response):          # call method to find response
-    return chatbot_response(response)   # Get response using flask
+@app.route("/<lang>/<response>")               # at the end point
+def create_response(lang, response):          # call method to find response
+    return chatbot_response(lang, response)   # Get response using flask
 
 if __name__ == "__main__":              # on running python app.py
     from waitress import serve

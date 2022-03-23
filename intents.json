@@ -10,8 +10,7 @@
                 "Hello",
                 "hey",
                 "hi",
-                "greetings",
-                "aloha"
+                "greetings"
             ],
             "responses": [
                 "Hello!",
@@ -1108,26 +1107,12 @@
             "context": ""
         },
          {
-            "tag": "noanswerEN",
+            "tag": "noanswer",
             "patterns": [
-                "what",""
+                "","?"
             ],
             "responses": [
-                "I'm sorry I don't understand.",
-                "Could you phrase that differently for me?",
-                "Not sure I understand."
-            ],
-            "context": ""
-        },
-        {
-            "tag": "noanswerFR",
-            "patterns": [
-                "Que",""
-            ],
-            "responses": [
-                "Je suis d\u00e9sol\u00e9, je n'ai pas compris.",
-                "Pourriez-vous formuler cela autrement pour moi?",
-                "Je ne suis pas certain de comprendre."
+                ""
             ],
             "context": ""
         }
