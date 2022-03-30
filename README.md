@@ -37,12 +37,12 @@
      
     the chatgui.py will open a gui for you to test the AI's responses,
     the app.py will run the api which you can test either in at http://127.0.0.1:5000/
-    by adding a phrase or word to the end i.e. http://127.0.0.1:5000/thank%20you which will show
+    by adding a phrase or word to the end i.e. http://127.0.0.1:5000/en/thank%20you which will show
     the response on the webpage. or you can use the python console using the request:
        
-       requests.get("http://localhost:5000/Thanks").text
+       requests.get("http://localhost:5000/en/Thanks").text
             or
-        r = requests.get("http://localhost:5000/Thanks")
+        r = requests.get("http://localhost:5000/en/Thanks")
         r.text
 ### Code References
 ![image](https://github.com/bcgov-elmsd/workbc-helpbot/blob/main/HelpbotCode.png)
