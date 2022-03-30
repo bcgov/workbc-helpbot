@@ -81,4 +81,5 @@ def chatbot_response(lang,text):
             res = random.choice(noAnswerFR)
     else:
         res = res.replace('workbc-test', DEEP_LINKING)
+    print(res)
     return res
