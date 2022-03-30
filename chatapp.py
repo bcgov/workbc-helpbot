@@ -7,11 +7,11 @@ from keras.models import load_model
 import json
 import random
 import os
-from dotenv import load_dotenv
+#below is needed for windows local run add dotenv to requirement.txt if running locally.
+#from dotenv import load_dotenv
+#load_dotenv()
 
-load_dotenv()
-
-DEEP_LINKING = os.getenv('DEEP_LINKING')
+DEEP_LINKING = os.environ.get('DEEP_LINKING')
 model = load_model('chatbot_model.h5')
 intents = json.loads(open('intents.json').read())
 words = pickle.load(open('words.pkl', 'rb'))
