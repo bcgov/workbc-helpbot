@@ -6,4 +6,3 @@ nltk
 pickle-mixin
 h5py>=2.9.0
 waitress
-dotenv
