@@ -41,15 +41,14 @@ def bow(sentence, words, show_details=True):
                 # assign 1 if current word is in the vocabulary position
                 bag[i] = 1
                 if show_details:
-                    print ("found in bag: %s" % w)
+                    print("found in bag: %s" % w)
     return(np.array(bag))
 
 def predict_class(sentence, model):
     # filter out predictions below a threshold
     p = bow(sentence, words, show_details=False)
     res = model.predict(np.array([p]))[0]
-    print(res)
-    ERROR_THRESHOLD = 0.31
+    ERROR_THRESHOLD = 0.33
     results = [[i, r] for i, r in enumerate(res) if r > ERROR_THRESHOLD]
     # sort by strength of probability
     results.sort(key=lambda x: x[1], reverse=True)
@@ -74,8 +73,8 @@ def chatbot_response(lang,text):
         res = ""
     else:
         res = getResponse(ints, intents)
-    if(res == ""):
-        if(lang == "en"):
+    if res == "":
+        if lang == "en":
             res = random.choice(noAnswerEN)
         else:
             res = random.choice(noAnswerFR)

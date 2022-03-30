@@ -979,6 +979,8 @@
             "tag": "actionplanEN",
             "patterns": [
                 "What is an action plan?",
+                "action plan",
+                "Where can I find my action plan?",
                 "What is a to-do list?",
                 "Where is my to do list?"
             ],
